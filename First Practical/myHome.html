@@ -80,16 +80,86 @@
     .icon-btn{
       width:38px;
       height:38px;
-      background:rgb(192, 162, 204);
+      background:rgb(112, 30, 145);
       border-radius:50%;
 
       display:flex;
       justify-content:center;
       align-items:center;
 
-      color:#ee9090;
+      color:#da16a9;
       font-size:18px;
       cursor:pointer;
+    }
+
+    .section{
+      padding: 40px 0;
+    }
+
+    #products h2{
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 32px;
+    }
+
+    .featured-products{
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-collapse: separate;
+      border-spacing: 20px;
+    }
+
+    .featured-products td{
+      background: rgba(49, 190, 56, 0);
+      border: 1px solid rgba(104, 92, 104, 0.25);
+      border-radius: 18px;
+      padding: 24px;
+      vertical-align: top;
+      box-shadow: 0 5px 30px rgba(255, 248, 254, 0.664);
+    }
+
+    .featured-products img{
+      display: block;
+      margin: 0 auto 18px;
+      width: 180px;
+      height: auto;
+      border-radius: 18px;
+    }
+
+    .featured-products h3{
+      color: #ffffff;
+      font-size: 20px;
+      margin: 0 0 12px;
+    }
+
+    .featured-products p{
+      color: #2e14528a;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .featured-products .cta{
+      display: inline-block;
+      padding: 12px 22px;
+      background: #310435;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: background .3s ease, transform .3s ease;
+      animation: popButton 2.5s ease-in-out infinite;
+    }
+
+    .featured-products .cta:hover{
+      background: #d29f5c;
+      transform: scale(1.05);
+    }
+
+    @keyframes popButton {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.08); }
     }
 
   </style>
@@ -106,7 +176,7 @@
       <a href="myHome.html" class="active">HOME</a>
       <a href="myAboutus.html">ABOUT US</a>
       <a href="myProducts.html">PRODUCTS</a>
-      <a href="myHairtips.html">HAIR TIPS</a>
+      <a href="myHairTips.html">HAIR TIPS</a>
        <a href="myContactUs.html">CONTACT US</a>
 
  
@@ -128,7 +198,7 @@
 
 
 
-    <h1 style="text-align: center; color: #ffffff;">Big Curls, Bigger Attitude.</h1> ;
+    <h1 style="text-align: center; color: #ffffff;font-family: 'Notulenn Serif Display', serif; font-size: 100px;">Big Curls, Bigger Attitude.</h1> ;
   
   </header>
  <ul>
@@ -161,31 +231,36 @@ With oCurrrl, it’s all about embracing your texture and letting your curls do 
   <!-- Products Section -->
   <section class="section" id="products">
     <h2>Featured Products</h2>
-    <div class="products">
-      <div class="product">
-                <img src="Images/image 4.jpg" alt="image of hot block serum" width="200" height="200px"/>
-        <h3>Ocurrrl Fomo Setting Mousse Shea Butter & Coconut Nourishing Styling Foam 250ml</h3>
-        <p>Fear Of Missing Out? Don't let it be your curls</p>
-        <a href="myProducts.html" class="cta">Buy Now</a>
-      </div>
-      <div class="product">
-        <img src="Images/image 2.jpg" alt="image of hot block serum" width="200" height="200px"/>
-        <h3>Ocurrrl Heat Protect Serum Argan Oil Vit E 50ml</h3>
-        <p>Protection against heat damage.</p>
-        <a href="myProducts.html" class="cta">Buy Now</a>
-      </div>
-      <div class="product">   <img src="Images/image 6.jpg" alt="image of hot block serum" width="200" height="200px"/>
-        <h3>Ocurrrl Braid Spray Shea Butter & Coconut 250ml</h3>
-        <p>Revive curls on the go.</p>
-        <a href="myProducts.html" class="cta">Buy Now</a>
-      </div>
-    </div>
+    <table class="featured-products">
+      <tr>
+        <td class="product">
+          <img src="Images/image 4.jpg" alt="image of hot block serum" width="200" height="200px"/>
+          <h3>Ocurrrl Fomo Setting Mousse Shea Butter & Coconut Nourishing Styling Foam 250ml</h3>
+          <p style="color: #ffffff;"> Fear Of Missing Out? Don't let it be your curls</p>
+          <a href="myProducts.html" class="cta">Buy Now</a>
+        </td>
+        <td class="product">
+          <img src="Images/image 2.jpg" alt="image of hot block serum" width="200" height="200px"/>
+          <h3>Ocurrrl Heat Protect Serum Argan Oil Vit E 50ml</h3>
+          <p style="color: #ffffff;">Protection against heat damage.</p>
+          <a href="myProducts.html" class="cta">Buy Now</a>
+        </td>
+        <td class="product">
+          <img src="Images/image 6.jpg" alt="image of hot block serum" width="200" height="200px"/>
+          <h3>Ocurrrl Braid Spray Shea Butter & Coconut 250ml</h3>
+          <p style="color: #ffffff;">Revive curls on the go.</p>
+          <a href="myProducts.html" class="cta">Buy Now</a>
+        </td>
+      </tr>
+    </table>
   </section>
 
+<div style="text-align: center;">
     <h2>Exclusively available at Dis-Chem</h2>
      <h3>Shop your favourite products now</h3>
     <a href="https://www.dischem.co.za/catalogsearch/result/?q=ocurr" target="_blank">
   <img src="Images/dischem logo.png" alt=" dischemwebsite" width="400" height="200">
+</div>
     
 </body>
 

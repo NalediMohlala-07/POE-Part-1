@@ -11,6 +11,8 @@
 
   <!-- Hero Section -->
 
+ 
+        
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -76,7 +78,6 @@
       color:      color:#ee9090  !important;
     }
 
-
     /* CIRCLE BUTTON */
     .icon-btn{
       width:38px;
@@ -88,9 +89,79 @@
       justify-content:center;
       align-items:center;
 
-      color:white;
+      color:#ee9090;
       font-size:18px;
       cursor:pointer;
+    }
+
+    .section{
+      padding: 40px 0;
+    }
+
+    #products h2{
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 32px;
+    }
+
+    .featured-products{
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-collapse: separate;
+      border-spacing: 20px;
+    }
+
+    .featured-products td{
+      background: rgba(214, 35, 250, 0);
+      border: 1px solid rgba(238, 149, 226, 0.25);
+      border-radius: 18px;
+      padding: 24px;
+      vertical-align: top;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .featured-products img{
+      display: block;
+      margin: 0 auto 18px;
+      width: 180px;
+      height: auto;
+      border-radius: 18px;
+    }
+
+    .featured-products h3{
+      color: #ffffff;
+      font-size: 20px;
+      margin: 0 0 12px;
+    }
+
+    .featured-products p{
+      color: #f0e5ff;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .featured-products .cta{
+      display: inline-block;
+      padding: 12px 22px;
+      background: #310435;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: background .3s ease, transform .3s ease;
+      animation: popButton 2.5s ease-in-out infinite;
+    }
+
+    .featured-products .cta:hover{
+      background: #d29f5c;
+      transform: scale(1.05);
+    }
+
+    @keyframes popButton {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.08); }
     }
 
   </style>
@@ -99,18 +170,16 @@
 <body>
 
   <header class="header">
-<img src="Images/o currl logo copy.png" alt="oCurrl Logo" width="250px" height="250px">
 
-></div>
-
+    <img src="Images/o currl logo copy.png" alt="oCurrl Logo" width="250px" height="250px">
     </div>
 
     <nav class="nav-links">
       <a href="myHome.html" class="active">HOME</a>
       <a href="myAboutus.html">ABOUT US</a>
       <a href="myProducts.html">PRODUCTS</a>
-      <a href="myHairtips.html">HAIR TIPS</a>
-      <a href="myContactUs.html">CONTACT US</a>
+      <a href="myHairTips.html">HAIR TIPS</a>
+       <a href="myContactUs.html">CONTACT US</a>
 
  
       </div>
@@ -122,160 +191,120 @@
 
 <head>
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>oCurrl Hair Care</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #ffffff;
-      color: #333;
-    }
-  
-    }
-    header img {
-      width: 250px; /* adjust logo size */
-    }
-    header h1 {
-      color: #fff;
-      margin-top: 20px;
-    }
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .section h2 {
-      margin-bottom: 20px;
-      color: #6a1b9a;
-    }
-    .products {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .product {
-      border: 1px solid #6b0707;
-      padding: 20px;
-      width: 200px;
-      border-radius: 8px;
-    }
-    .cta {
-      background-color: #ffffff;
-      color: #fff;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 20px;
- 
-    }
-  </style>
-  
-</head>
-<body {background-color:rgb(197, 180, 225);}>
-
-  <!-- Hero Section -->
-  <header>
- 
-
-
- 
- 
-  <!-- About Section -->
+ <!-- About Section -->
   <section class="section" id="about">
-          <img src="Images/header  image 5.jpg" alt="ocurrl ladies image with logo ="width="1200px" height="600px">
-        
+  
+    <h1 style="text-align: left; color: #ffffff;font-family: 'Notulenn Serif Display', serif; font-size: 60px;">Products</h1> 
+          <img style="display: block;margin: auto" src="Images/header  image 5.jpg" alt="ocurrl ladies image with logo ="width="1200px" height="600px">
+
+
+  </header>
+ <ul>
+
+      </ul> 
+  <!-- About Section -->
+  <section class="container">.
+
+
+  
+
   </section>
 
   <!-- Products Section -->
   <section class="section" id="products">
-    <h2 style="text-align:center ;color: #ffffff;">Our Products</h2>
-    <div class="products">
-      <div class="product">
-                <img src="Images/image 4.jpg" alt="image of fomo mousse" width="200" height="200px"/>
-        <h3>Ocurrrl Fomo Setting Mousse Shea Butter & Coconut Nourishing Styling Foam 250ml</h3>
-        <p>Fear Of Missing Out? Don't let it be your curls</p>
-     
-      </div>
-      <div class="product">
-        <img src="Images/image 2.jpg" alt="image of hot block serum" width="200" height="200px"/>
-        <h3>Ocurrrl Heat Protect Serum Argan Oil Vit E 50ml</h3>
-        <p>Protection against heat damage.</p>
-      
-      </div>
-      <div class="product">   <img src="Images/image 6.jpg" alt="image of braid spray" width="200" height="200px"/>
-        <h3>Ocurrrl Braid Spray Shea Butter & Coconut 250ml</h3>
-        <p>Revive curls on the go.</p>
-         
-      </div>
-      <div class="product">   <img src="Images/image 3.jpg" alt="image of glow era sheen spray" width="200" height="200px"/>
-        <h3>Ocurrrl Coconut Oil Sheen Spray 275ml</h3>
-        <p>Hydration meets sheen - for every curl.</p>
+    <h2>Featured Products</h2>
+    <table class="featured-products">
+      <tr>
+        <td class="product">
+          <img src="Images/image 8.jpg" width="200" height="200px"/>
+          <h3>Ocurrrl Sulphate Free Shampoo Shea Butter & Coconut 350ml</h3>
+          <p style="color: #ffffff;">  Hydrating and Softening</p>
+        </td{
+   position:relative;
+   top:20px;
+}
+        <td class="product">
+          <img src="Images/image 2.jpg" alt="image of hot block serum" width="200" height="200px"/>
+          <h3>Ocurrrl Heat Protect Serum Argan Oil Vit E 50ml</h3>
+          <p style="color: #ffffff;">Protection against heat damage.</p>
+        </td>
+         <td class="product">
+          <img src="Images/image 5.jpg" alt="Ocurrrl Leave-in Conditioner Coco Shea 350ml width="200" height="200px"/>
+          <h3>Ocurrrl Leave-in Conditioner Coco Shea 350ml</h3>
+          <p style="color: #ffffff;">This leave-in is a true "Thirst Trap" for your curls</p>
+        </td{
+   position:relative;
+    top:20px;
+}
+         <td class="product">
+          <img src="Images/image 4.jpg" alt="currrl Fomo Setting Mousse Shea Butter & Coconut Nourishing Styling Foam 250ml"width="200" height="200px"/>
+          <h3>Ocurrrl Fomo Setting Mousse Shea Butter & Coconut Nourishing Styling Foam 250ml</h3>
+          <p style="color: #ffffff;"> Fear Of Missing Out? Don't let it be your curls</p>
+        </td>
+        <td class="product">
+          <img src="Images/image 3.jpg" alt="OOcurrrl Coconut Sheen Spray 275ml" width="200" height="200px"/>
+          <h3>Ocurrrl Coconut Sheen Spray 275ml</h3>
+          <p style="color: #ffffff;"justify-content: center;> In the curl game, moisture is the new gold. Everybody wanna 'get dat' shine, that softness, that frizz-free bounce</p>
+        </td{
+   position:relative;
+   top:20px;
+}
+        <td class="product">
+          <img src="Images/image 9.jpg" alt="image of hot block serum" width="200" height="200px"/>
+          <h3>Ocurrrl Conditioner Shea Butter & Coconut 350ml.</h3>
+          <p style="color: #ffffff;"> Moisturising & softening</p>
+        </td{
+   position:relative;
+   top:20px;
+}
+        <td class="product">
+          
+        </td{
+   position:relative;
+   top:20px;
+}
+        <td class="product">
        
-       
-      </div>
-    </div>
-  </section>
-   <section class="section" id="products">
-  
-    <div class="products">
-      <div class="product">
-                <img src="Images/image 7.jpg" alt="image Ocurrrl Castor Oil GIVING INCHES 200ml" width="200" height="210px"/>
-        <h3>Ocurrrl Castor Oil 200ml</h3>
-        <p>Giving inches to your curls, one strand at a time.</p>
-     
-      </div>
-      <div class="product">
-        <img src="Images/image 8.jpg" alt="image ofOcurrrl Sulphate Free ShampooShea Butter & Coconut 350ml wash dey bae" width="200" height="200px"/>
-        <h3>Ocurrrl Sulphate Free Shampoo Shea Butter & Coconut 350ml</h3>
-        <p>I'll drench your curls in hydration.</p>
-      
-      </div>
-      <div class="product">   <img src="Images/image 9.jpg" alt="Ocurrrl Conditioner Shea Butter & Coconut 350ml" width="200" height="200px"/>
-        <h3>Ocurrrl Conditioner Shea Butter & Coconut 350ml</h3>
-        <p>get dat' shine, that softness,get dat moisture.</p>
+        </td{ 
+   position:relative;
+   top:20px;
+
+        <td class="product">
+          
         
-      </div>
-      <div class="product">   <img src="Images/image 5.jpg" alt="Ocurrrl Leave-in Conditioner Coco Shea 350ml" width="200" height="200px"/>
-        <h3>Ocurrrl Leave-in Conditioner Coco Shea 350ml</h3>
-        <p>This leave-in is a true "Thirst Trap" for your curls..</p>
-       
-      </div>
-    </div>
+        </td>
+        <td class="product">
+          <img src="Images/image 7.jpg" alt="Ocurrrl Castor Oil 200ml" width="200" height="200px"/>
+          <h3>Ocurrrl Castor Oil 200ml</h3>
+          <p style="color: #ffffff;">Giving inches hair growth oil, castor oil cold pressed.</p>
+        </td{ 
+   position:relative;
+   top:20px;
+  
+    <td class="product">
+          <img src="Images/image 6.jpg" alt="Ocurrrl Braid Spray Shea Butter & Coconut 250ml" width="200" height="200px"/>
+          <h3>Ocurrrl Braid Spray Shea Butter & Coconut 250ml</h3>
+          <p style="color: #ffffff;">Revive curls on the go.</p>
+      </tr>
+    </table>
   </section>
-  <!-- Testimonials Section -->
+ <!-- Testimonials Section -->
   <section class="section" id="testimonials">
-    <h2>What Our Curl Fam Says</h2>
+    <h2 style="text-align: center;">What Our Curl Fam Says</h2>
   
 <a href="https://www.instagram.com/ocurrrlsa/" target="_blank">
-  <img src="Images/instagram logo.png" alt="Instagram" width="200">
+  <img style="display: block;margin: auto" src="Images/instagram logo.png" alt="Instagram" width="200">
 </a>
 
 
   </section>
-
-  <!-- Newsletter Section -->
-  <section class="section" id="newsletter">
+<div style="text-align: center;">
     <h2>Exclusively available at Dis-Chem</h2>
      <h3>Shop your favourite products now</h3>
-     <h4>&darr;</h4>
     <a href="https://www.dischem.co.za/catalogsearch/result/?q=ocurr" target="_blank">
-
+  <img style="display: block;margin: auto" src="Images/dischem logo.png" alt=" dischemwebsite" width="400" height="200">
+</div>
     
-  <img src="Images/dischem logo.png" alt=" dischemwebsite" width="400" height="200">
-    
-    
-  </section>
-
-  <!-- Footer -->
- <footer><p>Copyright &copy; 2026 oCurrrlsa. All rights reserved.</p></footer>
-
 </body>
-</html>
-
-
+<footer><p>Copyright &copy; 2026 oCurrrlsa. All rights reserved.</p></footer>
 
